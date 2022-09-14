@@ -1,0 +1,215 @@
+package my_package;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+
+		System.out.println("1.Write a program(WAP) to print INEURON using pattern programming logic.\n");
+		//print INEURON
+		int n=7;
+		System.out.println("Output:\n");
+//		if n is odd then take n / 2 else n / 2 - 1
+		
+int m;
+if (n%2==0) {
+//	even
+	m=n/2-1;
+}else {
+	m=n/2;
+}
+		
+		for(int i=0;i<n;i++) {
+		//	    I
+			for(int j=0;j<n;j++) {
+				if(i==0||i==n-1||j==m) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+			}
+			
+//			space
+			System.out.print("   ");
+			
+			
+//			N
+			for(int j=0;j<n;j++) {
+				if(i==j||j==0||j==n-1) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+			}
+			
+//			space
+			
+			System.out.print("   ");
+			
+//			E
+			for(int j =0;j<n;j++) {
+				if(i==0||i==m||i==n-1||j==0) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+			}
+		
+//          space    
+			System.out.print("   ");
+		
+			
+//			U
+			for(int j =0;j<n;j++) {
+				if((i==n-1&&j!=0&&j!=n-1)||(j==0&&i!=n-1)||(j==n-1&&i!=n-1)) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+			}
+
+//          space    
+			System.out.print("   ");
+				
+	
+//			R
+			
+			for(int j =0;j<n;j++) {
+				if(j==0||(i==0&&j!=n-1)||(i==m&&j!=n-1)||(j==n-1&&( i!=0&&i!=m))) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+			}
+			
+			
+//			space
+		    System.out.print("   ");
+			
+//		    O
+		    for(int j =0;j<n;j++) {
+				if((j==n-1&&i!=0&&i!=n-1)||(j==0&&i!=0&&i!=n-1)||(i==0&&j!=0&&j!=n-1)||(i==n-1&&j!=0&&j!=n-1)) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+			}
+		    
+		    
+			
+//			space
+			System.out.print("   ");
+			
+			
+//			N
+			for(int j=0;j<n;j++) {
+				if(i==j||j==0||j==n-1) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+			}
+		    
+		    
+//			next line
+			System.out.println();
+		}
+	
+		System.out.println();
+		
+		System.out.println("2. Write a program to print\r\n"
+				+ "1 1 1 1\r\n"
+				+ "2 2 2 2\r\n"
+				+ "3 3 3 3\r\n"
+				+ "4 4 4 4");
+		
+		System.out.println("Output:\n");
+		n=4;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+		
+		
+//		new pattern
+	System.out.println("3. WAP to print the pattern");
+		n=18;
+		System.out.println("Output:\n");
+		for(int i=0;i<n;i++) {
+			
+			for(int j=0;j<n;j++) {
+//				if(i==0&&j<=n/2||i<=n/2&&j==0||i+j<=(n-1)/2||i==0&&j>n/2||j==(n-1)&&i<=n/2||j-i>n/2) {
+					if(i==0||i+j<=(n-1)/2||j-i>n/2||j==0||i==n-1||j==n-1) {
+				System.out.print("*");
+			}
+			else {
+				System.out.print(" ");
+			}
+				
+		}
+			System.out.println();	
+			
+//			for(int j=0;j<n;j++) {
+////					if(i<n/2&&j==(n-1)||j>n/2||j-i==(n/2)) {
+//						if() {
+//					System.out.print("*");
+//				}
+//				else {
+//					System.out.print(" ");
+//				}
+//			}
+//			
+		}		
+		
+		
+		System.out.println("4. WAP to print");
+		
+
+		System.out.println("Output:\n");
+n=14;		
+		for(int i=0;i<n;i++) {
+	for(int j=0;j<n;j++) {
+		if(i-j>=n/2&&j<=n/2||i==n-1||i+j>=(n)+(n-1)/2&&j<=n-1	) {
+			System.out.print("*");
+		}
+		else {
+			System.out.print(" ");
+		}
+	}
+	System.out.println();
+		}
+		
+
+		System.out.println("5. WAP to print");
+		
+
+		System.out.println("Output:\n");
+
+		n=10;		
+		for(int i=0;i<n;i++) {
+	for(int j=0;j<n;j++) {
+//		if(i-j>=n/2&&j<=n/2||i==n-1||i+j>=(n)+(n-1)/2&&j<=n-1	) {
+		
+		if(i-j>=n/2&&j<=n/2||i+j<=(n-1)/2||i==0||i==n-1	) {
+			System.out.print("*");
+		}
+		else {
+			System.out.print(" ");
+		}
+	}
+	System.out.println();
+		}
+
+		
+		
+		}	
+	}
+
